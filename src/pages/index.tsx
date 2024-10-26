@@ -1,4 +1,5 @@
 import ImageElement from '../components/ImageElement'
+import { getAsset } from 'node:sea'
 
 const imageNames = [
   '2x1.jpg',
@@ -18,6 +19,8 @@ const imageNames = [
 function ImageGallery() {
   return (
     <div>
+      <img src="/cdn-images/contacto.png" alt="Descripción de la imagen" />
+
       {imageNames.map((imageName) => (
         <ImageElement
           key={imageName}

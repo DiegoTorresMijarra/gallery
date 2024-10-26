@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   reactStrictMode: true, // next.config.js
   images: {
     loader: 'imgix',
-    path: 'https://your-imgix-subdomain.imgix.net/',
+    path: 'https://cdn-my-wedding-gallery-jorge-maria.imgix.net/',
   },
 }
 

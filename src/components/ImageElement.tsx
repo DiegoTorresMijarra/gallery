@@ -20,7 +20,7 @@ function ImageElement({
       width={width}
       height={height}
       quality={75}
-      placeholder="blur"
+      // placeholder="blur"
     />
   )
 }
