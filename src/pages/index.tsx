@@ -1,5 +1,4 @@
 import ImageElement from '../components/ImageElement'
-import { getAsset } from 'node:sea'
 
 const imageNames = [
   '2x1.jpg',
