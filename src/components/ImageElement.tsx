@@ -15,12 +15,13 @@ function ImageElement({
 }: Readonly<ImageElementProps>) {
   return (
     <Image
-      src={src}
+      src={`https://cdn-images-jorge-maria.imgix.net/${src}`}
       alt={alt}
       width={width}
       height={height}
       quality={75}
       // placeholder="blur"
+      // blurDataURL="data:image/svg+xml;base64,..." // Opcional
     />
   )
 }
