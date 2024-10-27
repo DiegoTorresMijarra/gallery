@@ -1,11 +1,15 @@
 import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  reactStrictMode: true, // next.config.js
+  reactStrictMode: true,
   images: {
-    loader: 'imgix',
-    path: 'https://cdn-my-wedding-gallery-jorge-maria.imgix.net/',
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'diegotorresmijarra.github.io',
+        pathname: '/gallery/cdn-images/**',
+      },
+    ],
   },
 }
 

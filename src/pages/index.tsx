@@ -18,12 +18,10 @@ const imageNames = [
 function ImageGallery() {
   return (
     <div>
-      <img src="/cdn-images/contacto.png" alt="Descripción de la imagen" />
-
       {imageNames.map((imageName) => (
         <ImageElement
           key={imageName}
-          src={`/cdn-images/${imageName}`} // Asume que la carpeta 'cdn-images' está en 'public'
+          src={`https://diegotorresmijarra.github.io/gallery/cdn-images/${imageName}`}
           alt={`Imagen ${imageName}`}
         />
       ))}
